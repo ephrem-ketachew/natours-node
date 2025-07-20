@@ -12,7 +12,7 @@ module.exports = class Email {
 
   newTransport() {
     if (process.env.NODE_ENV === 'production') {
-      console.log('Trying to send your email');
+      // console.log('Trying to send your email');
       return nodemailer.createTransport({
         service: 'SendGrid',
         auth: {
